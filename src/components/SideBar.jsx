@@ -137,7 +137,7 @@ const SideBar = () => {
           </p>
           <p className="flex items-center gap-5 text-[14px] bg-[#F4F5F7] p-4">
             7 days left on free trial
-            <button className="bg-black text-white px-2 md:p-0 py-1 rounded-md text-[12px] cursor-pointer ">
+            <button className="bg-black text-white px-2 py-1 rounded-md text-[12px] cursor-pointer ">
               Add billing
             </button>
           </p>
