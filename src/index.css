@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  padding: 20px;
+}
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-container {
+    width: 100%;
+  }
+
+  .content-container {
+    display: none; /* Hide content in mobile view */
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 769px) {
+  .app-container {
+    display: flex;
+  }
+
+  .sidebar-container {
+    width: 22%; /* Adjust width as needed */
+  }
+
+  .content-container {
+    width: 78%; /* Adjust width as needed */
+  }
+}
